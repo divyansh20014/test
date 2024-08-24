@@ -1,17 +1,20 @@
 {
-    "version":2,
+    "version": 2,
     "builds": [
         {
-            "src":"./index.py",
+            "src": "./index.py",
             "use": "@vercel/python",
-            "config":{"runtime":"python3.12"}
+            "config": { "runtime": "python3.12" }
         }
     ],
-    
     "routes": [
         {
-            "src":"/(.*)",
-            "dest":"/"
+            "src": "/api/combined-data",
+            "dest": "/api/combined-data"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/"
         }
-
+    ]
 }
