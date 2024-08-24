@@ -10,7 +10,7 @@
     "routes": [
         {
             "src": "/api/combined-data",
-            "dest": "/api/combined-data"
+            "dest": "/"
         },
         {
             "src": "/(.*)",
